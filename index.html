@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Text Test </title>
+    <link rel="stylesheet" href="./src/styles/mainStyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>اختبار سرعة الكتابة</h2>
+            <span id='time-ago'></span>
+        </div>
+        <div id='test' class="none">
+            
+            <div class="body">
+                <div class="testContainer">
+                   
+                    <p id="textwriting" class="inactive">
+
+                    </p>
+                </div>
+            </div>
+         </div>
+            <div dir='rtl' id='begin' class="inBegining">
+                <label for="time">اختر الوقت :</label>
+                <select name="time" id="time">
+                    <option selected disabled value=""> Select Time</option>
+                    <option value="1">1m</option>
+                    <option value="3">3m</option>
+                    <option value="5">5m</option>
+                </select>
+                <div class="error"></div>
+                <button id='btn-start'>بدء الكتابة</button>
+                <div dir="rtl" class="result">
+                    <h3 id="wordPerMinute"></h3>
+                    <h3 id="wordSuccess"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
+</html>
