@@ -124,8 +124,7 @@ function setTimer(minutes){
     let s = 0;
     return setInterval(()=>{
       let formatSeconds = seconds % 60 < 10 ? '0'+Math.floor(seconds % 60) : Math.floor(seconds % 60)
-        seconds-=1;
-        s+=1;
+ 
         timeElement.innerText='time Left :'+ Math.floor(seconds / 60) +':' + formatSeconds;
         if(s === min){
             min+=60;
@@ -136,6 +135,9 @@ function setTimer(minutes){
         if(seconds <=0){
             reset()
         }
+        
+        seconds-=1;
+        s+=1;
     },1000)
 }
 
