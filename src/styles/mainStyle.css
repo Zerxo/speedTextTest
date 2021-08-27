@@ -13,7 +13,7 @@ body{
 .container{
     background-color: #ddd;
     width: 800px;
-    height: 600px;
+    height: 450px;
     border-radius: 10px;
     padding:10px;
     overflow: hidden;
@@ -37,7 +37,7 @@ body{
 }
 
  #textwriting{
-    height:450px;
+    height:350px;
     background-color: #fff;
     margin:15px;
     border-radius: 3px;
